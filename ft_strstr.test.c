@@ -33,7 +33,7 @@ int     main()
 	printf("OK\n");
 	
 	printf("must return 0 if the string to find can't be found\n");
-	assertIntEqual (ft_strstr(str, to_find2) - 0, 0);
+	assertIntEqual (str - ft_strstr(str, to_find2), str - 0);
 	printf("OK\n");
     return (0);
 }
