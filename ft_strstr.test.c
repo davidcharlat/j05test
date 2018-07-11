@@ -25,7 +25,7 @@ int     main()
 	printf("OK\n");
 		
 	printf("must find the first occurs of the string to find\n");
-	assertIntEqual ((int)ft_strstr(str, to_find15),(int)str + 1);
+	assertIntEqual (ft_strstr(str, to_find15) - str, 1);
 	printf("OK\n");
 	
 	printf("must return \"str\" if *to_find == \"\"\n");
@@ -33,7 +33,7 @@ int     main()
 	printf("OK\n");
 	
 	printf("must return 0 if the string to find can't be found\n");
-	assertIntEqual ((int)ft_strstr(str, to_find2), 0);
+	assertIntEqual (ft_strstr(str, to_find2) - 0, 0);
 	printf("OK\n");
     return (0);
 }
