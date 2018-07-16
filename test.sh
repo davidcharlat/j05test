@@ -11,5 +11,6 @@ do
 		let "n = n + 1"
 	fi
 done
-
+a=$(find j05 -printf "0" |wc -c)
+echo $a
 
