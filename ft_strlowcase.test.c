@@ -20,7 +20,7 @@ int     main()
 	int i;
 
 	i = 0;
-	ft_strlowcase(src);
+	ft_strupcase(src);
 	while (i <= 13)
 	{
 		printf("Since source char is \"%c\", destination should be \"%c\"\n", origin[i], result[i]);
