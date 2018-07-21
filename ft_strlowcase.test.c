@@ -14,13 +14,13 @@ void    assertCharEqual(char expected, char received)
 
 int     main()
 {
-    char origin[] = "ZA90#1*[à@ED";
+	char origin[] = "ZA90#1*[à@ED";
 	char src[] = "ZA90#1*[à@ED";
 	char result[] = "za90#1*[à@ed";
 	int i;
 
 	i = 0;
-	ft_strupcase(src);
+	ft_strlowcase(src);
 	while (i <= 13)
 	{
 		printf("Since source char is \"%c\", destination should be \"%c\"\n", origin[i], result[i]);
